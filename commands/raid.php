@@ -139,7 +139,7 @@ if ($raid_id > 0) {
         $stmt = $dbh->prepare(
             "
             UPDATE    raids
-            SET       pokemon = :boss
+            SET       pokemon = :boss,
 		      gym_team = :team
             WHERE     id = :raid_id
             "
